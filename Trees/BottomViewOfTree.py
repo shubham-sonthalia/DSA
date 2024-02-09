@@ -7,7 +7,7 @@ class Solution:
         d = {} 
         queue = [] 
         queue.append(self.NodeWithIndex(root, 0))
-        while len(queue) != 0: 
+        while queue: 
             element = queue.pop(0)
             d[element.idx] = element.node.data;
             if element.node.left is not None:
